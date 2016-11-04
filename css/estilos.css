@@ -1,0 +1,69 @@
+header{
+  background-color: #0082c7;
+}
+
+body{
+  background: #e8e8e8;
+  *{
+    marging: 0;
+    padding: 0;
+  }
+}
+.cabecalho{
+  background: #ccccff;
+
+}
+.cabecalho-logo{
+  font-size: 26px;
+}
+.container{
+  padding: 0 10%;
+}
+
+.mural{
+text-align: center; /*o inline me permitiu alterar o texto pq o bloco ganhou compportamento de palavra*/
+display: flex;
+flex-wrap: wrap;
+}
+.cartao{
+  background: #CAE1FF;
+  margin: 16px;
+  padding: 16px;
+  display: inline-block; /* usando o inline porque quero definir a largura E também quero deixar todos os elementos na mesma linha */
+  width: 190px;
+  box-sizing: border-box;
+  text-align: left;
+  flex-basis: 190px; /*limita o tamanho da largura dos cartes */
+  flex-grow: 1; /*peso 1 torna os cartoes com o mesmo tamanho, no caso, tenho 5 cartoes, um deles caido, este sofrer[a uma distribuicao igualit[aria entre os demais irmaos*/
+
+}
+
+#mudaLayout{
+  display: none;
+  background-color: #E0EEEE;
+
+}
+
+.mural--linhas{
+  flex-direction: column;
+
+}
+.mural--linhas .cartao{
+  flex-basis: auto;
+  width: auto;
+  display: block;
+}
+
+.cartao--some{
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+@media (min-width:560px) {
+  .cartao {
+    width: 190px;
+    display: inline-block;
+
+  }
+  #mudaLayout{
+    display: inline-block;;

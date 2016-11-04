@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/cartao.css">
+  <link rel="stylesheet" href="css/cabecalho.css">
+  <link rel="stylesheet" href="css/opcoesDoCartao.css">
+  <link rel="stylesheet" href="css/opcoesDaPagina.css">
+  <link rel="stylesheet" href="css/novoCartao.css">
+  <link rel="stylesheet" href="css/botaoSync.css">
+  <meta name="viewport" content="width=device-width">
+
+    <title>Ceep</title>
+</head>
+<body>
+  <header class="cabecalho container">
+    <h1 class="cabecalho-logo">Ceep</h1>
+    <div class="opcoesDaPagina"></div>
+      <input type="search" id="busca" placeholder="busca" class="opcoesDaPagina-opcao">
+      <button id="ajuda" class="opcoesDaPagina-opcao opcoesDaPagina-botao">?</button>
+      <button id="mudaLayout" class="opcoesDaPagina-mudaLayout opcoesDaPagina-opcoes opcoesDaPagina-botao">Linhas</button>
+      <button id="sync" class="opcoesDaPagina-opcao opcoesDaPagina-botao botaoSync"></button>
+</header>
+<form class="novoCartao container">
+  <textarea class="novoCartao-conteudo" placeholder="Digite aqui"></textarea>
+  <input class="novoCartao-salvar" type="submit" value="Salvar">
+</form>
+
+    <section class="container mural">
+      <!--<div class="cartao" id="cartao1">
+        <div class="opcoesDoCartao">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcoes" data-idcartao="cartao1">Remover</button>
+          <button class="opcoesDoCartao-edita opcoesDoCartao-opcoes" data-idcartao="cartao1">Editar</button>
+        </div>
+        <p class="cartao-conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolor, perspiciatis eos necessitatibus quam, quas molestiae recusandae eius reiciendis quaerat magni quibusdam distinctio delectus placeat nisi excepturi culpa! Quaerat, aut.</p>
+      </div>
+      <div class="cartao" id="cartao2">
+        <div class="opcoesDoCartao">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcoes" data-idcartao="cartao2"><span>Remover</span></button>
+          <button class="opcoesDoCartao-edita opcoesDoCartao-opcoes" data-idcartao="cartao2">Editar</button>
+        </div>
+        <p class="cartao-conteudo">Dicta consequuntur aut, eius, reprehenderit fuga aliquam molestiae quos eaque amet ipsam veniam soluta doloribus temporibus vel at excepturi illum minima porro assumenda alias dolorem. Commodi aut doloremque beatae repudiandae?</p>
+      </div>
+      <div class="cartao" id="cartao3">
+        <div class="opcoesDoCartao">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcoes" data-idcartao="cartao3">Remover</button>
+          <button class="opcoesDoCartao-edita opcoesDoCartao-opcoes" data-idcartao="cartao3">Editar</button>
+        </div>
+        <p class="cartao-conteudo">Molestiae reprehenderit quo, odio aperiam enim sint veritatis ut, non deserunt libero rerum alias, sed, magni! Laborum cupiditate voluptates eveniet deleniti consequatur earum, atque quisquam dicta quidem, fuga repellat quam.</p>
+      </div>
+      <div class="cartao" id="cartao4">
+        <div class="opcoesDoCartao">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcoes" data-idcartao="cartao4">Remover</button>
+          <button class="opcoesDoCartao-edita opcoesDoCartao-opcoes" data-idcartao="cartao4">Editar</button>
+        </div>
+        <p class="cartao-conteudo">Rerum molestias unde minima quo ipsam, laboriosam itaque nemo voluptatem nesciunt perspiciatis in asperiores beatae, aut iure consectetur accusamus error iste voluptas sed quam atque voluptatum sapiente! Iste, aspernatur debitis!</p>
+      </div>
+      <div class="cartao" id="cartao5">
+        <div class="opcoesDoCartao">
+          <button class="opcoesDoCartao-remove opcoesDoCartao-opcoes" data-idcartao="cartao5">Remover</button>
+          <button class="opcoesDoCartao-edita opcoesDoCartao-opcoes" data-idcartao="cartao5">Editar</button>
+        </div>
+        <p class="cartao-conteudo">Excepturi voluptatum non similique quos beatae, consectetur assumenda esse numquam saepe accusantium amet ad consequuntur eaque magnam veniam dolorum quibusdam sunt. Sit, maxime ut officia minima officiis sequi, impedit quaerat.</p>
+      </div> -->
+    </section>
+
+<script src="js/jquery.js"></script>
+<script src="js/criaOpcoesDoCartao.js"></script>
+<script src="js/adicionaCartao.js"></script>
+<script src="js/controladorDeCartao.js"></script>
+<script src="js/cabecalho.js"></script>
+<script src="js/principal.js"></script>
+<script src="js/novoCartao.js"></script>
+<script src="js/sincronizacao.js"></script>
+<script src="js/ajuda.js"></script>
+
+</body>
+</html>
