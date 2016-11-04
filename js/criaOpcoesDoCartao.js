@@ -43,7 +43,7 @@ var criaOpcoesDoCartao = (function(){
     var opcoes = $("<div>").addClass("opcoesDoCartao")
                            .append(botaoRemove);
 
-    return opcoes;
+    return opcoes
 
   }
 })();
